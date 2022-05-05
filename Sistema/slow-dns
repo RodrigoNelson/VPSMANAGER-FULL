@@ -22,7 +22,7 @@ installslowdns() {
     wget -P $DIR sshplus.net/scripts/slow-dns/dns-server >/dev/null 2>&1  
     chmod 777 $DIR/dns-server >/dev/null 2>&1
     cd /etc/SSHPlus/dns >/dev/null 2>&1
-    wget https://raw.githubusercontent.com/nexyssh/VPSMANAGER-FULL/master/Sistema/server.pub && https://raw.githubusercontent.com/nexyssh/VPSMANAGER-FULL/master/Sistema/server.pub >/dev/null 2>&1
+    wget https://raw.githubusercontent.com/RodrigoNelson/VPSMANAGER-FULL/main/Sistema/server.pub && https://raw.githubusercontent.com/RodrigoNelson/VPSMANAGER-FULL/main/Sistema/server.pub >/dev/null 2>&1
     cd >/dev/null 2>&1
     configdns() {
         interface=$(ip a |awk '/state UP/{print $2}'| cut -d: -f1)
